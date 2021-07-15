@@ -160,6 +160,8 @@ AlurakutMenu.Logo = styled.img`
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
+  box-shadow: 3px 3px 3px 3px #000000; //MY CREATE
+    /* eixo X , eixo Y , BLUR, ESPAÇO,   COR; */
 `;
 
 function AlurakutMenuProfileSidebar({ githubUser }) {
@@ -243,11 +245,11 @@ export function OrkutNostalgicIconSet(props) {
   return (
     <OrkutNostalgicIconSet.List>
       {[
-        { name: 'Recados', slug: 'recados', icon: 'book' },
-        { name: 'Fotos', slug: 'fotos', icon: 'camera' },
-        { name: 'Videos', slug: 'videos', icon: 'video-camera' },
-        { name: 'Fãs', slug: 'fas', icon: 'star' },
-        { name: 'Mensagens', slug: 'mensagens', icon: 'email' },
+        { name: 'Scraps', slug: 'Scraps', icon: 'book' },
+        { name: 'Instagram', slug: 'Photos', icon: 'camera' },
+        { name: 'TikTok', slug: 'Movies', icon: 'video-camera' },
+        { name: 'Fans', slug: 'Fans', icon: 'star' },
+        { name: 'Mails', slug: 'Mails', icon: 'email' },
       ].map(({ name, slug, icon }) => (
         <li key={`orkut__icon_set__${slug}`}>
           <span style={{ gridArea: 'title' }} className="OrkutNostalgicIconSet__title">
@@ -260,9 +262,9 @@ export function OrkutNostalgicIconSet(props) {
         </li>
       ))}
       {[
-        { name: 'Confiável', slug: 'confiavel', icon: 'smile' },
-        { name: 'Legal', slug: 'legal', icon: 'cool' },
-        { name: 'Sexy', slug: 'sexy', icon: 'heart' },
+        { name: 'Fofoqueiro', slug: 'confiavel', icon: 'smile' },
+        { name: 'Maneirinho', slug: 'legal', icon: 'cool' },
+        { name: 'Sensuellen', slug: 'sexy', icon: 'heart' },
       ].map(({ name, slug, icon }) => {
         const total = props[slug] ? props[slug] : 2;
         return (

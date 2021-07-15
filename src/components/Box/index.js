@@ -55,7 +55,16 @@ const Box = styled.div`
     color: #FFFFFF;
     border-radius: 10000px;
     background-color: #6F92BB;
+    
   }
+
+  //MY CREATE
+  button:hover {
+    background: purple;
+    transform: scale(1.2);
+    box-shadow: 3px 3px 5px 3px #000000; 
+}
+
 `; 
 
 export default Box;

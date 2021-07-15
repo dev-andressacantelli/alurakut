@@ -14,7 +14,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: #D9E6F6;
+    background: linear-gradient(#FEFEFE, #888888, #8a09ed);
+    //background-color: #D9E6F6; //DFAULT
   }
 
   #__next {
