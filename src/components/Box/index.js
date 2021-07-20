@@ -4,6 +4,7 @@ const Box = styled.div`
   background: #FFFFFF;
   border-radius: 8px;
   padding: 16px;
+  //opacity: 0.9 ;
   
   /* CSS Pré-Pronto */
   margin-bottom: 10px;
@@ -55,12 +56,11 @@ const Box = styled.div`
     color: #FFFFFF;
     border-radius: 10000px;
     background-color: #6F92BB;
-    
   }
 
   //MY CREATE
   button:hover {
-    background: purple;
+    background: #00ACEE;
     transform: scale(1.2);
     box-shadow: 3px 3px 5px 3px #000000; 
 }

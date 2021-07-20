@@ -160,7 +160,7 @@ AlurakutMenu.Logo = styled.img`
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
-  box-shadow: 3px 3px 3px 3px #000000; //MY CREATE
+  //box-shadow: 3px 3px 3px 3px #000000; //MY CREATE
     /* eixo X , eixo Y , BLUR, ESPAÇO,   COR; */
 `;
 
@@ -246,10 +246,10 @@ export function OrkutNostalgicIconSet(props) {
     <OrkutNostalgicIconSet.List>
       {[
         { name: 'Scraps', slug: 'Scraps', icon: 'book' },
-        { name: 'Instagram', slug: 'Photos', icon: 'camera' },
-        { name: 'TikTok', slug: 'Movies', icon: 'video-camera' },
-        { name: 'Fans', slug: 'Fans', icon: 'star' },
-        { name: 'Mails', slug: 'Mails', icon: 'email' },
+        { name: 'Fotos', slug: 'Photos', icon: 'camera' },
+        { name: 'Vídeos', slug: 'Movies', icon: 'video-camera' },
+        { name: 'Fãs', slug: 'Fans', icon: 'star' },
+        { name: 'e-mails', slug: 'Mails', icon: 'email' },
       ].map(({ name, slug, icon }) => (
         <li key={`orkut__icon_set__${slug}`}>
           <span style={{ gridArea: 'title' }} className="OrkutNostalgicIconSet__title">
@@ -262,9 +262,9 @@ export function OrkutNostalgicIconSet(props) {
         </li>
       ))}
       {[
-        { name: 'Fofoqueiro', slug: 'confiavel', icon: 'smile' },
-        { name: 'Maneirinho', slug: 'legal', icon: 'cool' },
-        { name: 'Sensuellen', slug: 'sexy', icon: 'heart' },
+        { name: 'Confiável', slug: 'confiavel', icon: 'smile' },
+        { name: 'Legal', slug: 'legal', icon: 'cool' },
+        { name: 'Sexy', slug: 'sexy', icon: 'heart' },
       ].map(({ name, slug, icon }) => {
         const total = props[slug] ? props[slug] : 2;
         return (
@@ -436,6 +436,13 @@ const AlurakutLoginScreen = css`
           background-color: var(--colorPrimary);
           color: var(--textSecondaryColor);
         }
+
+        button:hover {
+          background: #00ACEE;
+          transform: scale(1.0);
+          box-shadow: 3px 3px 5px 3px #000000; 
+      }
+        
       }
     }
     .footerArea {
